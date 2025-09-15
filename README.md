@@ -30,6 +30,7 @@ See [RunTaskCommand.Execute()](https://github.com/deniskovalchuk/vs-status-cente
 3. `Debug -> Start Debugging (F5)`.
 4. In the opened Visual Studio Experimental Instance:
     - `Tools -> Invoke RunTaskCommand`.
+5. Modify [RunTaskCommand.Execute()](https://github.com/deniskovalchuk/vs-status-center-notification/blob/d84e51f3c6d2787832914dc1fc993cce56a05c18/StatusCenterNotification/RunTaskCommand.cs#L97) to compare different values.
 
 <h2>Environment</h2>
 
