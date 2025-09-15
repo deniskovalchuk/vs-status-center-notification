@@ -3,7 +3,7 @@
 <h2>Problem description</h2>
 
 This project uses [`IVsTaskStatusCenterService`](https://learn.microsoft.com/en-us/dotnet/api/microsoft.visualstudio.taskstatuscenter.ivstaskstatuscenterservice?view=visualstudiosdk-2022)
-to display progress in the Visual Studio status bar and compares the behavior of different [`CompletionActions`](https://learn.microsoft.com/en-us/dotnet/api/microsoft.visualstudio.taskstatuscenter.completionactions?view=visualstudiosdk-2022) values:
+to display progress in the Visual Studio status bar and compares the behavior of different [`CompletionActions`](https://learn.microsoft.com/en-us/dotnet/api/microsoft.visualstudio.taskstatuscenter.completionactions?view=visualstudiosdk-2022) values.
 
 1. `CompletionActions.RetainOnRanToCompletion`
 
