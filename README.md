@@ -3,7 +3,8 @@
 <h2>Problem description</h2>
 
 This project uses [`IVsTaskStatusCenterService`](https://learn.microsoft.com/en-us/dotnet/api/microsoft.visualstudio.taskstatuscenter.ivstaskstatuscenterservice?view=visualstudiosdk-2022)
-to display progress in the Visual Studio status bar and compares the behavior of different [`CompletionActions`](https://learn.microsoft.com/en-us/dotnet/api/microsoft.visualstudio.taskstatuscenter.completionactions?view=visualstudiosdk-2022) values.
+to display progress in the Visual Studio status bar and demonstrates that the [`CompletionActions.RetainAndNotifyOnRanToCompletion`](https://learn.microsoft.com/en-us/dotnet/api/microsoft.visualstudio.taskstatuscenter.completionactions?view=visualstudiosdk-2022)
+does not provide an additional visual notification to the user when the task completes.
 
 1. `CompletionActions.RetainOnRanToCompletion`
 
