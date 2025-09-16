@@ -3,8 +3,10 @@
 <h2>Problem description</h2>
 
 This project uses [`IVsTaskStatusCenterService`](https://learn.microsoft.com/en-us/dotnet/api/microsoft.visualstudio.taskstatuscenter.ivstaskstatuscenterservice?view=visualstudiosdk-2022)
-to show progress in the Visual Studio status bar and demonstrates that [`CompletionActions.RetainAndNotifyOnRanToCompletion`](https://learn.microsoft.com/en-us/dotnet/api/microsoft.visualstudio.taskstatuscenter.completionactions?view=visualstudiosdk-2022)
-does not provide an additional visual notification upon task completion.
+to display progress in the Visual Studio status bar and demonstrates that [`CompletionActions.RetainAndNotifyOnRanToCompletion`](https://learn.microsoft.com/en-us/dotnet/api/microsoft.visualstudio.taskstatuscenter.completionactions?view=visualstudiosdk-2022)
+**does not** provide an additional visual notification upon task completion.
+
+The following is a comparison of the behaviors of `CompletionActions.RetainOnRanToCompletion` and `CompletionActions.RetainAndNotifyOnRanToCompletion`:
 
 1. `CompletionActions.RetainOnRanToCompletion`
 
@@ -18,8 +20,8 @@ does not provide an additional visual notification upon task completion.
     Documentation:  
     `After the task associated with this flag runs to completion it is retained in the Task Status Center UI and a visual notification is provided to the user indicating the task completed.`
 
-    **There is no additional visual notification upon task completion:**
-   
+    **However, no additional visual notification is shown upon task completion:**
+
     ![RetainAndNotifyOnRanToCompletion](https://github.com/deniskovalchuk/vs-status-center-notification/blob/main/Images/RetainAndNotifyOnRanToCompletion.gif)
 
 See [RunTaskCommand.Execute()](https://github.com/deniskovalchuk/vs-status-center-notification/blob/0dcf6bdd53c13bc1a415a6a848b4bf33dc69e030/StatusCenterNotification/RunTaskCommand.cs#L90) for more details.
