@@ -22,7 +22,7 @@ does not provide an additional visual notification upon task completion.
    
     ![RetainAndNotifyOnRanToCompletion](https://github.com/deniskovalchuk/vs-status-center-notification/blob/main/Images/RetainAndNotifyOnRanToCompletion.gif)
 
-See [RunTaskCommand.Execute()](https://github.com/deniskovalchuk/vs-status-center-notification/blob/d84e51f3c6d2787832914dc1fc993cce56a05c18/StatusCenterNotification/RunTaskCommand.cs#L90) for more details.
+See [RunTaskCommand.Execute()](https://github.com/deniskovalchuk/vs-status-center-notification/blob/0dcf6bdd53c13bc1a415a6a848b4bf33dc69e030/StatusCenterNotification/RunTaskCommand.cs#L90) for more details.
 
 <h2>Steps to reproduce</h2>
 
@@ -31,7 +31,7 @@ See [RunTaskCommand.Execute()](https://github.com/deniskovalchuk/vs-status-cente
 3. `Debug -> Start Debugging (F5)`.
 4. In the opened Visual Studio Experimental Instance:
     - `Tools -> Invoke RunTaskCommand`.
-5. Modify [RunTaskCommand.Execute()](https://github.com/deniskovalchuk/vs-status-center-notification/blob/d84e51f3c6d2787832914dc1fc993cce56a05c18/StatusCenterNotification/RunTaskCommand.cs#L97) to compare different values.
+5. Modify [RunTaskCommand.Execute()](https://github.com/deniskovalchuk/vs-status-center-notification/blob/0dcf6bdd53c13bc1a415a6a848b4bf33dc69e030/StatusCenterNotification/RunTaskCommand.cs#L97) to compare different values.
 
 <h2>Environment</h2>
 
