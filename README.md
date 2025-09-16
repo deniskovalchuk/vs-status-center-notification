@@ -1,5 +1,7 @@
 # Visual Studio Report
 
+https://developercommunity.visualstudio.com/t/IVsTaskStatusCenterService:-No-Visual-No/10967300
+
 <h2>Problem description</h2>
 
 This project uses [`IVsTaskStatusCenterService`](https://learn.microsoft.com/en-us/dotnet/api/microsoft.visualstudio.taskstatuscenter.ivstaskstatuscenterservice?view=visualstudiosdk-2022)
@@ -24,7 +26,7 @@ The following is a comparison of the behaviors of `RetainOnRanToCompletion` and 
 
     ![RetainAndNotifyOnRanToCompletion](https://github.com/deniskovalchuk/vs-status-center-notification/blob/main/Images/RetainAndNotifyOnRanToCompletion.gif)
 
-See [RunTaskCommand.Execute()](https://github.com/deniskovalchuk/vs-status-center-notification/blob/0dcf6bdd53c13bc1a415a6a848b4bf33dc69e030/StatusCenterNotification/RunTaskCommand.cs#L90) for more details.
+See [RunTaskCommand.Execute()](https://github.com/deniskovalchuk/vs-status-center-notification/blob/7ffbf417feb430c7d936acc4dd2c6d42b0b6152d/StatusCenterNotification/RunTaskCommand.cs#L90) for more details.
 
 <h2>Steps to reproduce</h2>
 
@@ -33,7 +35,7 @@ See [RunTaskCommand.Execute()](https://github.com/deniskovalchuk/vs-status-cente
 3. `Debug -> Start Debugging (F5)`.
 4. In the opened Visual Studio Experimental Instance:
     - `Tools -> Invoke RunTaskCommand`.
-5. Modify [RunTaskCommand.Execute()](https://github.com/deniskovalchuk/vs-status-center-notification/blob/0dcf6bdd53c13bc1a415a6a848b4bf33dc69e030/StatusCenterNotification/RunTaskCommand.cs#L97) to compare different values.
+5. Modify [RunTaskCommand.Execute()](https://github.com/deniskovalchuk/vs-status-center-notification/blob/7ffbf417feb430c7d936acc4dd2c6d42b0b6152d/StatusCenterNotification/RunTaskCommand.cs#L97) to compare different values.
 
 <h2>Environment</h2>
 
